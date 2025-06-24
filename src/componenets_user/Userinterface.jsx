@@ -9,8 +9,8 @@ function User_Interface({ username, onLogout }) {
   const [showCreateFlashC, setShowCreateFlashC] = useState(false);
   const [showPractice, setShowPractice] = useState(false);
   const [flashcardSets, setFlashcardSets] = useState([]);
-  const [loadingFlashcards, setLoadingFlashcards] = useState(true);
   const [flashcardError, setFlashcardError] = useState('');
+  const [, setLoadingFlashcards] = useState(false);
 
   const handleLogout = () => {
     const authService = new AuthService();
@@ -20,13 +20,14 @@ function User_Interface({ username, onLogout }) {
     window.location.href = '/';
   };
 
+  // Fetch flashcard sets only when user clicks "Start Solving Flashcards"
   useEffect(() => {
-    if (username) {
-      const controller = new AbortController();
-      const signal = controller.signal;
+    if (showPractice && username) {
       setLoadingFlashcards(true);
       setFlashcardError('');
-      console.log('User_Interface: Pornesc fetch pentru flashcards pentru', username);
+      setFlashcardSets([]);
+      const controller = new AbortController();
+      const signal = controller.signal;
       httpRequest(`/api/flashcards/${username}`, {
         method: 'GET',
         signal,
@@ -34,7 +35,6 @@ function User_Interface({ username, onLogout }) {
       })
         .then(async res => {
           const text = await res.text();
-          console.log('User_Interface: Răspuns primit de la backend pentru flashcards:', text);
           try {
             const data = JSON.parse(text);
             if (data && data.success && Array.isArray(data.flashcards)) {
@@ -45,7 +45,7 @@ function User_Interface({ username, onLogout }) {
               setFlashcardError('No flashcard sets found.');
             }
           } catch (e) {
-            console.error('User_Interface: Eroare la parsarea JSON:', e);
+            console.error('User_Interface: Error parsing flashcards JSON:', e);
             setFlashcardSets([]);
             setFlashcardError('Backend did not return JSON.');
           }
@@ -57,11 +57,10 @@ function User_Interface({ username, onLogout }) {
             return;
           }
           setFlashcardError('Error loading flashcards.');
-          console.error('User_Interface: Eroare la fetch flashcards:', err);
         });
       return () => controller.abort();
     }
-  }, [username]);
+  }, [showPractice, username]);
 
   return (
     <div className="user-interface-root">
@@ -80,6 +79,11 @@ function User_Interface({ username, onLogout }) {
             Upload your PDF and let our AI instantly generate questions and answers for you.<br />
             <span style={{ color: '#6c63ff', fontWeight: 600 }}>Get ready to learn faster, smarter, and easier!</span>
           </p>
+          {flashcardError && (
+            <div className="flashcard-error" style={{ color: 'red', margin: '16px 0' }}>
+              {flashcardError}
+            </div>
+          )}
           <div className="ai-btns-row">
             <div className="ai-btn-col">
               <div className="ai-btn-desc">Already have flashcards? Start practicing and boost your knowledge!</div>
@@ -94,34 +98,11 @@ function User_Interface({ username, onLogout }) {
               </button>
             </div>
           </div>
-          <div style={{ marginTop: 40 }}>
-            <h3 style={{ marginBottom: 12 }}>Your Flashcard Sets</h3>
-            {loadingFlashcards && <div>Loading...</div>}
-            {flashcardError && <div className="flashcard-error">{flashcardError}</div>}
-            {!loadingFlashcards && !flashcardError && flashcardSets.length > 0 && (
-              <table className="flashcard-table">
-                <thead>
-                  <tr>
-                    <th className="flashcard-th">Title</th>
-                    <th className="flashcard-th">Number of Questions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {flashcardSets.map((set, idx) => (
-                    <tr key={idx} className={`flashcard-tr ${idx % 2 === 0 ? 'even-row' : 'odd-row'}`}>
-                      <td className="flashcard-td flashcard-title-cell">{set.title}</td>
-                      <td className="flashcard-td center flashcard-count-cell">{set.count}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            )}
-          </div>
         </div>
       ) : showCreateFlashC ? (
         <CreateFlashC />
       ) : showPractice ? (
-        <Flashcard username={username} sets={flashcardSets} />
+        <Flashcard username={username} sets={flashcardSets}  />
       ) : null}
     </div>
   );
