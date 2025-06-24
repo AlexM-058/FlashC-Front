@@ -1,0 +1,18 @@
+.back-to-sets-btn {
+  background: #eee;
+  color: #6c63ff;
+  border: 1.5px solid #6c63ff;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.back-to-sets-btn:hover {
+  background: #6c63ff;
+  color: #fff;
+  border: 1.5px solid #48c6ef;
+}

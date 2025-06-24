@@ -1,0 +1,48 @@
+.custom-button {
+  background-color: #5b4caf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.custom-button:hover {
+  background-color: #4a3e8c;
+  box-shadow: inset 0 0 0 2px #4a3e8c, 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.json-content{
+  display: grid;
+  place-items: center;
+
+}
+.poza{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.happy-message{
+  font-size: 1.5rem;
+  color: #774caf;
+  margin-top: 1rem;
+  width: 80%;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}

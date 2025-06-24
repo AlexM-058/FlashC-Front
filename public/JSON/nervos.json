@@ -1,0 +1,20 @@
+
+  [
+    {"intrebare": "Viteza fibre mielinizate", "raspuns": "100 m/s"},
+    {"intrebare": "Viteza fibre nemielinizate", "raspuns": "10 m/s"},
+    {"intrebare": "Se termina măduva spinării – continuare con medular", "raspuns": "L2 (lombara 2)"},
+    {"intrebare": "Total fibre fascicul piramidal", "raspuns": "1 000 000"},
+    {"intrebare": "Fibre mielinizate fascicul piramidal", "raspuns": "700 000"},
+    {"intrebare": "Fibre încrucișate fascicul piramidal", "raspuns": "75%"},
+    {"intrebare": "Fibre neîncrucișate fascicul piramidal", "raspuns": "25%"},
+    {"intrebare": "Nervi spinali", "raspuns": "31 perechi = 62 total"},
+    {"intrebare": "Nervi cranieni (din care doar 10 perechi au raporturi cu trunchiul cerebral)", "raspuns": "12 perechi = 24 total"},
+    {"intrebare": "Lobi emisfere cerebrale", "raspuns": "4"},
+    {"intrebare": "Repetarea necesară pentru reflexul condiționat", "raspuns": "10 – 30"},
+    {"intrebare": "Începe SNV simpatic", "raspuns": "C8 (cervical 8)"},
+    {"intrebare": "SNV simpatic pentru organele capului + plex cardiac + pulmonar", "raspuns": "T1 – T4"},
+    {"intrebare": "SNV simpatic – nerv mare splahnic (din fibre preggl) sinapsând în Ggl prevertebral Celiac (cu excepția fibrelor pt MSR)", "raspuns": "T5 – T9"},
+    {"intrebare": "SNV simpatic – micul splahnic (din fibre preggl) sinapsând apoi în Ggl prevertebral Mezentéric Superior", "raspuns": "T10 – T12"},
+    {"intrebare": "SNV simpatic – fibre preggl sinapsând apoi în Ggl prevertebral Mezentéric Inferior", "raspuns": "L1 – L2"},
+    {"intrebare": "SNV parasimpatic – nervii pelvieni cu stație în ggl prevezical", "raspuns": "S2 – S4"}
+  ]

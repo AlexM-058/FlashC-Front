@@ -1,0 +1,18 @@
+.verify-email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.verifyemail-error {
+  color: #e74c3c;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.verifyemail-success {
+  color: #27ae60;
+  margin-top: 8px;
+  font-size: 1rem;
+}

@@ -1,0 +1,63 @@
+[
+    {
+      "intrebare": "Saliva",
+      "raspuns": "800 – 1500 ml / zi"
+    },
+    {
+      "intrebare": "Suc gastric",
+      "raspuns": "2 litri / zi"
+    },
+    {
+      "intrebare": "Suc pancreatic",
+      "raspuns": "1200 – 1500 ml / zi"
+    },
+    {
+      "intrebare": "Bila",
+      "raspuns": "250 – 1000 ml / zi"
+    },
+    {
+      "intrebare": "Compozitie chimica saliva",
+      "raspuns": "99.5% apa – 0.5% reziduu uscat"
+    },
+    {
+      "intrebare": "Compozitie chimica suc gastric",
+      "raspuns": "99% apa – 1% reziduu uscat"
+    },
+    {
+      "intrebare": "Reziduu uscat saliva",
+      "raspuns": "0.2% anorganic si 0.3% organic"
+    },
+    {
+      "intrebare": "Reziduu uscat suc gastric",
+      "raspuns": "0.6% anorganic si 0.4% organic"
+    },
+    {
+      "intrebare": "Timpul faringian",
+      "raspuns": "1 – 2 secunde"
+    },
+    {
+      "intrebare": "Sfincterul inferior esofagian",
+      "raspuns": "2 – 5 cm"
+    },
+    {
+      "intrebare": "Secretie HCl liber sau combinat cu proteine",
+      "raspuns": "1 – 5 mEq / ora"
+    },
+    {
+      "intrebare": "pH-ul sucului gastric adult",
+      "raspuns": "1 – 2.5 pH"
+    },
+    {
+      "intrebare": "Necesar pt actiunea pepsinei",
+      "raspuns": "1.8 – 3.5 pH optim"
+    },
+    {
+      "intrebare": "Fragmentarea chimului intestinal",
+      "raspuns": "8 – 12 ori / min"
+    },
+    {
+      "intrebare": "Viteza deplasare unda propulsiva intestin subtire",
+      "raspuns": "0.5 – 2 cm / sec"
+    }
+  ]
+  

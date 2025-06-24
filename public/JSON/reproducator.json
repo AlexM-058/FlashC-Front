@@ -1,0 +1,183 @@
+[
+    {
+      "intrebare": "Care este masa ovarului?",
+      "raspuns": "6–8 g"
+    },
+    {
+      "intrebare": "Care este diametrul mare al ovarului?",
+      "raspuns": "3–5 cm"
+    },
+    {
+      "intrebare": "Care este lungimea trompelor uterine?",
+      "raspuns": "7–12 cm"
+    },
+    {
+      "intrebare": "Care este lungimea vaginului?",
+      "raspuns": "7–9 cm"
+    },
+    {
+      "intrebare": "Care este lungimea clitorisului?",
+      "raspuns": "5–6 cm"
+    },
+    {
+      "intrebare": "În ce intercostale se află glandele mamare?",
+      "raspuns": "III–VII"
+    },
+    {
+      "intrebare": "Care este masa testiculului?",
+      "raspuns": "15–25 g"
+    },
+    {
+      "intrebare": "Câți lobuli are fiecare testicul?",
+      "raspuns": "250–300 lobuli"
+    },
+    {
+      "intrebare": "Câți lobuli au ambii testiculi?",
+      "raspuns": "500–600 lobuli"
+    },
+    {
+      "intrebare": "Câți tubi seminiferi contorți există per lobul?",
+      "raspuns": "2–3 tubi seminiferi contorți"
+    },
+    {
+      "intrebare": "Câți tubi seminiferi contorți sunt într-un testicul?",
+      "raspuns": "500–900"
+    },
+    {
+      "intrebare": "Ce reprezintă canalele eferente?",
+      "raspuns": "Primele căi extra-testiculare"
+    },
+    {
+      "intrebare": "Care este lungimea veziculei seminale?",
+      "raspuns": "4–5 cm"
+    },
+    {
+      "intrebare": "Care este diametrul veziculei seminale?",
+      "raspuns": "2 cm"
+    },
+    {
+      "intrebare": "Câte foliculi primordiali are 1 ovar la naștere?",
+      "raspuns": "Sute de mii"
+    },
+    {
+      "intrebare": "Câte foliculi ajung la maturitate până la menopauză?",
+      "raspuns": "300–400"
+    },
+    {
+      "intrebare": "Care este perioada medie a ciclului feminin?",
+      "raspuns": "28 zile"
+    },
+    {
+      "intrebare": "Care este durata perioadei preovulatorii?",
+      "raspuns": "Ziua 1–ziua 14"
+    },
+    {
+      "intrebare": "Care este durata perioadei postovulatorii?",
+      "raspuns": "Ziua 14–ziua 28"
+    },
+    {
+      "intrebare": "Când are loc ovulația?",
+      "raspuns": "Ziua 14"
+    },
+    {
+      "intrebare": "Care este intervalul posibil pentru ovulație?",
+      "raspuns": "± 2 zile = 24–48 ore (ziua 12–ziua 15)"
+    },
+    {
+      "intrebare": "Ce se întâmplă la ovulație?",
+      "raspuns": "Are loc pe fondul vârfului LH și al unui mic vârf FSH"
+    },
+    {
+      "intrebare": "Ce se întâmplă cu corpul galben nefecundat?",
+      "raspuns": "Se elimină ovulul nefecundat (ziua 19–20)"
+    },
+    {
+      "intrebare": "Când începe secreția de progesteron?",
+      "raspuns": "Ziua 21–23"
+    },
+    {
+      "intrebare": "Cât timp se prelungește existența corpului galben dacă ovulul este fecundat?",
+      "raspuns": "3 luni"
+    },
+    {
+      "intrebare": "Care este vârsta la care se oprește activitatea tubilor seminiferi?",
+      "raspuns": "40–50 ani"
+    },
+    {
+      "intrebare": "Care este perioada de viață a ovulului după ovulație?",
+      "raspuns": "12–24 ore"
+    },
+    {
+      "intrebare": "Care este perioada de viabilitate a spermatozoizilor în tractul genital feminin?",
+      "raspuns": "2–3 zile"
+    },
+    {
+      "intrebare": "În ce interval se poate produce fecundarea după ovulație?",
+      "raspuns": "Ziua 14–ziua 15"
+    },
+    {
+      "intrebare": "Care este cantitatea de spermă ejacuată la un act sexual?",
+      "raspuns": "≈ 3,5 ml"
+    },
+    {
+      "intrebare": "Câți spermatozoizi sunt într-un ml de spermă?",
+      "raspuns": "120 milioane/ml"
+    },
+    {
+      "intrebare": "Câți spermatozoizi sunt în total într-o ejaculare?",
+      "raspuns": "4,2 x 10^8"
+    },
+    {
+      "intrebare": "Ce procent de spermatozoizi sunt normali?",
+      "raspuns": "60%"
+    },
+    {
+      "intrebare": "Cât durează capacitatea de a fecunda după emisie?",
+      "raspuns": "Până la 72 ore"
+    },
+    {
+      "intrebare": "Care este gradul de similitudine genetică între rudele de gradul I?",
+      "raspuns": "50%"
+    },
+    {
+      "intrebare": "Care este gradul de similitudine genetică între rudele de gradul II?",
+      "raspuns": "25%"
+    },
+    {
+      "intrebare": "Care este gradul de similitudine genetică între rudele de gradul III?",
+      "raspuns": "12,5%"
+    },
+    {
+      "intrebare": "Câte gene are genomul uman?",
+      "raspuns": "≈ 100.000"
+    },
+    {
+      "intrebare": "Câte cromozomi are celula umană?",
+      "raspuns": "46 cromozomi (23 perechi)"
+    },
+    {
+      "intrebare": "Ce cromozomi determină sexul feminin?",
+      "raspuns": "XX"
+    },
+    {
+      "intrebare": "Ce cromozomi determină sexul masculin?",
+      "raspuns": "XY"
+    },
+    {
+      "intrebare": "Ce cromozomi are ovulul?",
+      "raspuns": "X"
+    },
+    {
+      "intrebare": "Ce cromozomi pot avea spermatozoizii?",
+      "raspuns": "X sau Y"
+    },
+    {
+      "intrebare": "Ce determină heterozigotul după fecundare?",
+      "raspuns": "XX sau XY"
+    },
+    {
+      "intrebare": "Care este durata gestației?",
+      "raspuns": "280 zile"
+    }
+  ]
+  
