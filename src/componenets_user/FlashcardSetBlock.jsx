@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './FlashcardSetBlock.css';
 import PopUpAnswer from './Pop-up-answer';
-
+import { httpRequest } from '../utils/http';
+const API_URL = import.meta.env.VITE_API_URL;
 function FlashcardSetBlock({ question, answer, hint, index, onNext }) {
   const [showAnswer, setShowAnswer] = useState(false);
   const [showHint, setShowHint] = useState(false);
@@ -11,6 +12,7 @@ function FlashcardSetBlock({ question, answer, hint, index, onNext }) {
   const [loading, setLoading] = useState(false);
   const debounceRef = useRef();
 
+ 
   useEffect(() => {
     if (!userAnswer || !answer) {
       setAiNote(null);
@@ -18,16 +20,24 @@ function FlashcardSetBlock({ question, answer, hint, index, onNext }) {
       setLoading(false);
       return;
     }
+    
     setLoading(true);
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(async () => {
       try {
-        const res = await fetch('/api/compare-answers', {
+        console.log('Sending user answer for AI feedback:', { Answer: userAnswer, 'Correct answer': answer });
+        const requestBody = { Answer: userAnswer, 'Correct answer': answer };
+        console.log('Request body sent to backend:', JSON.stringify(requestBody));
+
+        const res = await httpRequest(`/api/compare-answers`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ Answer: answer, UserAnswer: userAnswer })
+          body: JSON.stringify(requestBody),
+          credentials: 'include'
         });
-        const data = await res.json();
+        const data = await res.json();              
+        console.log('AI feedback data:', data);       
+
         if (data && data.success && Array.isArray(data.result) && data.result.length >= 2) {
           setAiNote(data.result[0]);
           setAiFeedback(data.result[1]);
